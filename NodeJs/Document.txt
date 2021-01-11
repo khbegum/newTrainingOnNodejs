@@ -1,0 +1,28 @@
+NPM
+npm is a package manager for javascript.Find,share and reuse packages of code from hundreds of developers and assemble them in powerful ways
+coomands:
+npm help --> it helps to get other commands 
+To get package.json file we use command: npm init --yes
+To change values to default  in package.json file we use command : npm config set init-author-name "khairu"
+To delete default values   in package.json file we use command : npm config delete init-author-name 
+To install any dependencies we use command: npm install boostrap(dependency name) 
+To save that dependency in package.json we use command: npm install bootstrap --save
+In some case some depencies not required for production in that case we include that in dev-depencies we use command: npm install lodash --save-dev
+To uninstall the dependency and save in package.json we use command: npm uninstall/remove/un/rm bootstrap --save
+To uninstall the dependency and save in package.json from dev-dependencies we use command: npm uninstall lodash --save-dev
+To install the dependency  globally we use command: npm install bootstrap -g
+To uninstall the dependency  globally we use command: npm install bootstrap -g
+To get list of locally installed packages we use command: npm list --depth 0
+To get list of globally installed packages we use command: npm list --global true --depth 0
+Npm versioning: npm install lodash@a.b.c
+a.b.c==> a is major when there is a change in functional of a package it will be updated
+b is a minor version whenthere is a feature added to package the it will be updated
+c is a patch version when bug is reolved it will be updated
+In package.json if package is with carat symbol(^) it exclude major version ,if it is with ~ symbol it exclude both major and minor version and updates with lastest patch version.
+If you want everything in updated version then use * in package.json file like: "lodash":"*".
+Anytime if you want to uninstall not required depencies(extreneous package) i.e, which are not in package.json you can use command: npm prune
+Shortcuts:
+npm init -y(to install package.json)
+npm i (to install all packages which are in package.json)
+npm i lodash -S(to install and save that in package.json)
+npm i lodash -D(to install and save that in dev-depencies in package.json )
