@@ -11,6 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.20",
-    "moment": "^2.29.1"
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.7",
+    "strftime": "^0.10.0",
+    "yargs": "^16.2.0"
   }
 }
